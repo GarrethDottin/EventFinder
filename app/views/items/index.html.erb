@@ -1,13 +1,14 @@
 <h1> To Do List </h1> 
 
+<ul>
+  <% @items.each do |item| %>
+  <li><%= item.name %>: <%= itemdescription %></li>
+  <% end %>
+</ul>
 
 <form> 
-  <% @items.each do |item| %>
-  <%= item.name  %>: <%= item.description%>
-  <br>
-<% end %>
-<%= form_tag ('/items', method: "post")    %>
-<%= text_field_tag(:name) %>
-<%= text_field_tag (:description) %>
-<%= submit_tag("Create") %> 
-</form> 
+  <%= form_tag ('/items', method: "post")    %>
+  <%= text_field_tag(:name) %>
+  <%= text_field_tag (:description) %>
+  <%= submit_tag("Create") %> 
+</form>

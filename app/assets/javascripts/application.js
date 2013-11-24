@@ -13,3 +13,26 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+var ul = $('ul');
+var form = $('form');
+
+$(function() { 
+  function onSuccessitem(e,res) { 
+    $("ul").append(res);
+  }
+ $('.posting').on('ajax:success', onSuccessitem)
+
+
+})
+
+//  form.submit(function(e) {
+//   e.preventDefault();
+//   var data = form.serialize();
+//   console.log(data);
+//   $.post('/items', data, function(res) {
+//     console.log(res);
+//     var el = $(res);
+//     el.appendTo(ul);
+//   })
+// });
+

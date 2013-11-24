@@ -4,8 +4,8 @@ class ItemsController < ActionController::Base
     @item = Item.new
    end 
 
-  def create 
-    item =  Item.create!(params[:item]])
+  def create
+    item =  Item.create!(params[:item])
     if item.save 
       render partial: "items/item", locals: { item: item }
     end 

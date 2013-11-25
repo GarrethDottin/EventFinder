@@ -1,13 +1,54 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+body { 
+  background: rgba(239, 225, 196, .2);
+  display: inline-block;
+}
+
+header { 
+  font-family: 'Rosario', sans-serif;
+  font-size: 40px;
+  position: relative ;
+  left: 60px;
+  color: white;
+  display: inline-block;
+
+
+}
+img { 
+  position: relative;
+  left: 10px;
+}
+
+#header-text { 
+  background-color: #34495e;
+  bottom: 12px;
+  right: 25px;
+  display:inline-block;
+  position:relative;
+  width: 30000px;
+  opacity: .94;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #888888;
+}
+
+#todo-list{
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 1000px;
+  width: 500px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  opacity: .8;
+  padding: 10px;
+
+  }
+#Apps{ 
+  display:block;
+  background-color:  #e6e6e6;
+  width: 1200px;
+  height: 500px;
+  top: 3s0px;
+  left: 320px; 
+  position: relative;
+  display: inline-block;
+}
